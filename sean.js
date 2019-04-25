@@ -1,15 +1,22 @@
 //Private data... Nothing exposed to the global window object
 privateData = ( () => {
+    let paidOneA = parseInt('%PaidOneA%');
+    let paidOneB = parseInt('%PaidOneB%');
+    let paidTwo = parseInt('%PaidTwo%');
+    let baseOne = parseInt('%Inst1BaseAmt%');
+    let baseTwo = parseInt('%Inst2BaseAmt%');
     return container={
-        paidOne: parseInt('%Inst1AmtPaid%'),
-        paidTwo: parseInt('%Inst2AmtPaid%'),
-        baseOne: parseInt('%Inst1BaseAmt%'),
-        baseTwo: parseInt('%Inst2BaseAmt%'),
+        paidOne: function(){
+            return paidOneA + paidOneB
+        },
+        paidTwo: paidTwo,
+        baseOne: baseOne,
+        baseTwo: baseTwo,
         dueOne: function(){
-            return this.baseOne - this.paidOne
+            return this.baseOne - this.paidOne();
         },
         dueTwo: function(){
-            return this.baseTwo - this.paidTwo  
+            return this.baseTwo - this.paidTwo;
         }
     }
 } )();
