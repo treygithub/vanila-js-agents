@@ -1,11 +1,12 @@
-//Bug Fix.... Disreguard last email... this one works!  
-//Private data... Nothing exposed to the global window object
+//It works
+
+let paidOneA = Number('%PaidOneA%');
+let paidOneB = Number('%PaidOneB%');
+let paidTwo = Number('%PaidTwo%');
+let baseOne = Number('%Inst1BaseAmt%');
+let baseTwo = Number('%Inst2BaseAmt%');
+
 privateData = ( () => {
-    let paidOneA = parseInt('%PaidOneA%');
-    let paidOneB = parseInt('%PaidOneB%');
-    let paidTwo = parseInt('%PaidTwo%');
-    let baseOne = parseInt('%Inst1BaseAmt%');
-    let baseTwo = parseInt('%Inst2BaseAmt%');
     return container={
         paidOne: function(){
             return paidOneA + paidOneB;
