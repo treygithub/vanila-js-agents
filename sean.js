@@ -1,3 +1,4 @@
+//Bug Fix.... Disreguard last email... this one works!  
 //Private data... Nothing exposed to the global window object
 privateData = ( () => {
     let paidOneA = parseInt('%PaidOneA%');
@@ -7,7 +8,7 @@ privateData = ( () => {
     let baseTwo = parseInt('%Inst2BaseAmt%');
     return container={
         paidOne: function(){
-            return paidOneA + paidOneB
+            return paidOneA + paidOneB;
         },
         paidTwo: paidTwo,
         baseOne: baseOne,
