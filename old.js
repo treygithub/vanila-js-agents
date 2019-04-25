@@ -19,9 +19,3 @@ document.documentElement.appendChild(myDiv);
 //Create a text node to store the variable Due, then append to the myList ID
 var txtNode = document.createTextNode(due);
 document.getElementById('myList').appendChild(txtNode);
-
-
-https://passport.insperity.com/SecureAuth28/SecureAuth.aspx    $Treyinsperity74!
-https://timestar.insperity.com/NSP291/    $Treywork74!
-https://login.microsoftonline.com/common/login   $Treywork74!
-https://app.mozenda.com/   Welcome!9
